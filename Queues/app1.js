@@ -1,21 +1,20 @@
-class queue{
+class Queue {
     constructor(){
-        this.items = [1,2,3,4,5];
-        this.size = 5;
+        this.items = ["ayesha","ali","nimra"];
     }
-    enqueue(){
-        this.items.push(6);
+// for initailization and printing
+    printQueue() {
+        for(let i = 0; i<this.items.length;i++){
+            console.log(this.items[i]);
+        }
     }
-    dequeue(){
-        this.items.unshift
-    }
-    peek(){
-
-    }
-    isEmpty(){
-
-    }
-    printqueue(){
-        queue.enqueue.printqueue()
+    // for size
+    size() {
+        this.size = this.items.length;
+       console.log(this.size);
     }
 }
+// calling functions
+let myQueue = new Queue();
+myQueue.printQueue();
+myQueue.size();
